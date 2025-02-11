@@ -29,9 +29,12 @@ import { ValoracioncharlaComponent } from './components/valoracioncharla/valorac
 import { DetallesTechRiderComponent } from './components/detalles-tech-rider/detalles-tech-rider.component';
 import { CursosCentroComponent } from './components/cursos-centro/cursos-centro.component';
 import { CrearEmpresaCentroComponent } from './components/crear-empresa-centro/crear-empresa-centro.component';
+import { TiposCharlasComponent } from './components/tipos-charlas/tipos-charlas.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'charlas', component: TiposCharlasComponent },
   { path: 'login', component: LoginComponent },
   { path: 'usuario/perfil', component: PerfilusuarioComponent },
   { path: 'logout', component: LogoutComponent },

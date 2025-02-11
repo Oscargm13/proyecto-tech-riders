@@ -1,0 +1,53 @@
+// Banner con el título encima
+.banner {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background: url('./../../../assets/images/banner.jpg') no-repeat center center/cover;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+  }
+  
+  .titulo {
+	position: absolute;
+	color: white;
+	font-size: 2.5rem;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-align: center;
+  }
+  
+  // Estilos de las charlas (sin bordes ni sombras)
+  .charla {
+	text-align: center;
+	margin-bottom: 30px;
+  }
+  
+  .charla-img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 0; // Elimina bordes redondeados
+  }
+  
+  .charla-titulo {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 15px;
+  }
+  
+  .charla-texto {
+	font-size: 1rem;
+	color: #666;
+  }
+  
+  // Diseño responsive
+  @media (max-width: 768px) {
+	.titulo {
+	  font-size: 2rem;
+	  padding: 8px 15px;
+	}
+  }
+  
