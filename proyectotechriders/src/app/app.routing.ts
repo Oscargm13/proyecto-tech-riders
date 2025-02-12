@@ -30,11 +30,17 @@ import { DetallesTechRiderComponent } from './components/detalles-tech-rider/det
 import { CursosCentroComponent } from './components/cursos-centro/cursos-centro.component';
 import { CrearEmpresaCentroComponent } from './components/crear-empresa-centro/crear-empresa-centro.component';
 import { TiposCharlasComponent } from './components/tipos-charlas/tipos-charlas.component';
+import { TechRiderComponent } from './components/tech-rider/tech-rider.component';
+import { InscripcionEmpresasComponent } from './components/inscripcion-empresas/inscripcion-empresas.component';
+import { CentrosFormadoresComponent } from './components/centros-formadores/centros-formadores.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'charlas', component: TiposCharlasComponent },
+  { path: 'tech-rider', component: TechRiderComponent },
+  { path: 'inscripcion-empresa', component: InscripcionEmpresasComponent },
+  { path: 'centros-formadores', component: CentrosFormadoresComponent },
   { path: 'login', component: LoginComponent },
   { path: 'usuario/perfil', component: PerfilusuarioComponent },
   { path: 'logout', component: LogoutComponent },
