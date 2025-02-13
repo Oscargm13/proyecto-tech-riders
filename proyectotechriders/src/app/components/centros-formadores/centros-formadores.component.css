@@ -1,131 +1,84 @@
-/*-----Banners paginas------*/
-#cabecera_pagina {
-	margin-top: 5.2rem;
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.9;
+    margin: 0;
+    height: 100%;
 }
 
-/*ESPACIO SIDEBAR*/
-aside#secondary {
-	margin-top: 12rem;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Rokkitt, serif;
 }
 
-.page-id-51 main#content article:first-child {
-	margin-top: 0rem;
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-main#content article:first-child {
-	margin-top: 10rem;
-}
-
-/*--------CSS NAVBAR---------*/
-#header {
-	text-align: left;
+.banner {
 	position: relative;
-	padding: 0px !important;
-}
-
-#logo img {
-	width: 150px;
-}
-
-#header-wrap {
-	position: relative;
-	z-index: 200;
-	color: #fff;
-	background: #2d3945;
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	padding-top: 3rem;
-	padding-bottom: 1rem;
-	border-bottom: none;
-	transition: all .5s ease-in-out;
-}
-
-#header-wrap:after {
-	content: "";
-	display: table
-}
-
-#header-wrap:after {
-	clear: both
-}
-
-#header-wrap a {
-	color: inherit
-}
-
-header#header {
-	width: 100%;
-	margin: 0px 3rem;
-	max-width: 85%;
-}
-
-/*----- CSS Hover MENU links --------*/
-.menu-item a {
-	color: #FFFF !important;
-	font-weight: 500;
-	transition: all 200ms linear;
-}
-
-.menu-item:hover a {
-	color: #FFFF !important;
-}
-
-.menu-item {
-	position: relative;
-	padding: 5px 0 !important;
-	display: inline-block;
-}
-
-#site-navigation-wrap a:hover {
-	color: #ffffff
-}
-
-/*linea inferior*/
-.menu-item:after {
-	position: absolute;
-	bottom: -3px;
-	left: 0;
-	width: 100%;
-	height: 4px;
-	content: '';
-	background-color: #FFFFFF;
-	opacity: 0;
-	transition: all 200ms linear;
-}
-
-.menu-item:hover:after {
-	bottom: 0;
-	opacity: 1;
-}
-
-.menu-item {
-	position: relative;
-	transition: all 200ms linear;
-}
-
-/*QUITAR ESPACIO ENTRE NAVBAR Y CONTENIDO*/
-#main {
-	padding: 0px 0;
-}
-
-/*--------CSS FOOTER---------*/
-/*QUITAR ESPACIO ENTRE FOOTER Y CONTENIDO*/
-.entry-footer {
-	margin-top: 0px;
-}
-
-.footer-logo {
-	float: left;
-	margin-right: 15px;
-}
-
-.footer-first {
-	padding-top: 27px;
-	font-size: 14px;
-	font-weight: 700;
-}
-
-.site-info p strong {
+	width: 100vw;
+	height: 120px;
+	background-color: #666;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-left: 20%;
+	top: -16px;
+  }
+  
+  .titulo {
 	color: white;
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: left;
+  }
+
+/* Contenedor principal del contenido */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Imagen de la charla */
+.charla-img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Contenido de texto */
+.content {
+    width: 100%;
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+/* Botón de inscripción */
+.btn-container {
+    margin-top: 40px; /* Ajuste para bajar el botón */
+}
+
+/* Media Queries */
+@media (max-width: 1368px) {
+    .charla-img {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem;
+        padding: 8px 15px;
+    }
 }
