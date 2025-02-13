@@ -1,49 +1,87 @@
+/* Fuentes y estilos generales */
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.9;
+    margin: 0;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Rokkitt, serif;
+}
+
+/* Contenedor principal */
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Banner */
 .banner {
 	position: relative;
-	width: 100%;
-	height: 100px;
-	/* background: url('./../../../assets/images/banner.jpg') no-repeat center center/cover; */
+	width: 100vw; /* Ocupa todo el ancho de la pantalla */
+	height: 120px;
+	background-color: #666;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+	padding-left: 5%; /* Ajusta la posición del título */
+	left: 50%;
+	transform: translateX(-50%);
+	padding-left: 20%;
+	top: -16px;
   }
   
   .titulo {
-	position: absolute;
 	color: white;
 	font-size: 2.5rem;
 	font-weight: bold;
-	padding: 10px 20px;
-	border-radius: 10px;
-	text-align: center;
+	text-align: left;
   }
-  
-  .charla {
-	text-align: center;
-	margin-bottom: 30px;
-  }
-  
-  .charla-img {
-	width: 100%;
-	height: 250px;
-	object-fit: cover;
-	border-radius: 0;
-  }
-  
-  .charla-titulo {
-	font-size: 1.2rem;
-	font-weight: bold;
-	margin-top: 15px;
-  }
-  
-  .charla-texto {
-	font-size: 1rem;
-	color: #666;
-  }
-  
-  @media (max-width: 768px) {
-	.titulo {
-	  font-size: 2rem;
-	  padding: 8px 15px;
-	}
-  }
+
+/* Contenedor principal del contenido */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Imagen de la charla */
+.charla-img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Contenido de texto */
+.content {
+    width: 100%;
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+/* Botón de inscripción */
+.btn-container {
+    margin-top: 40px; /* Ajuste para bajar el botón */
+}
+
+/* Media Queries */
+@media (max-width: 1368px) {
+    .charla-img {
+        height: 70vh; /* Ajuste de imagen en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem;
+        padding: 8px 15px;
+    }
+}
