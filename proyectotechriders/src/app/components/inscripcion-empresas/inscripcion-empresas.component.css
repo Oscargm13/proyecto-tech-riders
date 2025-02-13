@@ -1,49 +1,109 @@
+/* Fuentes y estilos generales */
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.9;
+    margin: 0;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Rokkitt, serif;
+}
+
+/* Banner */
 .banner {
 	position: relative;
-	width: 100%;
-	height: 100px;
-	/* background: url('./../../../assets/images/banner.jpg') no-repeat center center/cover; */
+	width: 100vw;
+	height: 120px;
+	background-color: #666;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+	padding-left: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-left: 20%;
+	top: -16px;
   }
-  
-  .titulo {
-	position: absolute;
-	color: white;
-	font-size: 2.5rem;
-	font-weight: bold;
-	padding: 10px 20px;
-	border-radius: 10px;
-	text-align: center;
-  }
-  
-  .charla {
-	text-align: center;
-	margin-bottom: 30px;
-  }
-  
-  .charla-img {
-	width: 100%;
-	height: 250px;
-	object-fit: cover;
-	border-radius: 0;
-  }
-  
-  .charla-titulo {
-	font-size: 1.2rem;
-	font-weight: bold;
-	margin-top: 15px;
-  }
-  
-  .charla-texto {
-	font-size: 1rem;
-	color: #666;
-  }
-  
-  @media (max-width: 768px) {
-	.titulo {
-	  font-size: 2rem;
-	  padding: 8px 15px;
-	}
-  }
+
+.titulo {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5%; /* Mueve un poco más el título sin centrarlo totalmente */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Contenedor de la imagen y el texto */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagen */
+.tech-img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Contenedor de texto */
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Subtítulo */
+.subtitulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Descripción */
+.descripcion {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Botón */
+.btn-dark {
+    margin-top: 40px; /* Ajuste para bajar el botón */
+}
+
+/* Media Queries */
+@media (max-width: 1368px) {
+    .tech-img {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem;
+        padding: 8px 15px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .col-md-6 {
+        width: 100%;
+        text-align: center;
+    }
+    .btn-dark {
+        align-self: center;
+    }
+}

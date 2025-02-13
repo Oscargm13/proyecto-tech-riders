@@ -1,4 +1,3 @@
-/* Fuentes y estilos generales */
 body {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
@@ -12,23 +11,21 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Rokkitt, serif;
 }
 
-/* Contenedor principal */
 .container-fluid {
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Banner */
 .banner {
 	position: relative;
-	width: 100vw; /* Ocupa todo el ancho de la pantalla */
+	width: 100vw;
 	height: 120px;
 	background-color: #666;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	padding-left: 5%; /* Ajusta la posición del título */
+	padding-left: 5%;
 	left: 50%;
 	transform: translateX(-50%);
 	padding-left: 20%;
@@ -75,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Media Queries */
 @media (max-width: 1368px) {
     .charla-img {
-        height: 70vh; /* Ajuste de imagen en pantallas más pequeñas */
+        height: 70vh;
     }
 }
 
